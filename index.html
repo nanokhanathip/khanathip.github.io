@@ -1,28 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Fullstack Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nanokhanathip | Fullstack Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1 id="name"></h1>
-  <h3 id="title"></h3>
+  <div class="container">
 
-  <h2>About Me</h2>
-  <p id="about"></p>
+    <header class="hero">
+      <h1 id="name"></h1>
+      <p class="title" id="title"></p>
+      <p class="summary" id="summary"></p>
+    </header>
 
-  <h2>Skills</h2>
-  <p><strong>Frontend:</strong> <span id="frontend"></span></p>
-  <p><strong>Backend:</strong> <span id="backend"></span></p>
-  <p><strong>Tools:</strong> <span id="tools"></span></p>
+    <section>
+      <h2>Skills</h2>
+      <div id="skills" class="skills-grid"></div>
+    </section>
 
-  <h2>Projects</h2>
-  <ul id="projects"></ul>
+    <section>
+      <h2>Experience</h2>
+      <div id="experience"></div>
+    </section>
 
-  <h2>Contact</h2>
-  <p id="contact"></p>
+    <section>
+      <h2>Projects</h2>
+      <div id="projects" class="projects-grid"></div>
+    </section>
 
-  <script src="script.js"></script>
+    <section>
+      <h2>Contact</h2>
+      <div id="contact"></div>
+    </section>
+
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>
