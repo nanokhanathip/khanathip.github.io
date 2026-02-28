@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/api/resume")
+fetch("resume.json")
   .then(res => res.json())
   .then(data => {
     document.getElementById("name").innerText = data.name;
@@ -17,6 +17,6 @@ fetch("http://localhost:5000/api/resume")
     });
 
     document.getElementById("contact").innerHTML =
-      `Email: ${data.contact.email} <br>
+      `Email: ${data.contact.email}<br>
        GitHub: <a href="${data.contact.github}" target="_blank">${data.contact.github}</a>`;
   });
