@@ -1,0 +1,11 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Arial;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
