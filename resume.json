@@ -1,7 +1,7 @@
 {
   "name": "Nanokhanathip",
   "title": "Fullstack JavaScript Developer",
-  "summary": "Passionate developer building modern web applications.",
+  "summary": "Passionate Fullstack Developer building scalable and modern web applications using JavaScript across the stack.",
 
   "skills": {
     "frontend": ["HTML", "CSS", "JavaScript"],
@@ -11,25 +11,26 @@
 
   "experience": [
     {
-      "role": "Junior Developer",
-      "company": "Freelance",
+      "role": "Junior Fullstack Developer",
+      "company": "Freelance / Personal Projects",
       "period": "2024 - Present",
-      "description": "Building web applications using fullstack JavaScript."
+      "description": "Developing fullstack web applications with REST APIs and responsive frontend interfaces."
     }
   ],
 
   "projects": [
     {
       "name": "Fullstack Resume",
-      "description": "Dynamic resume website.",
+      "description": "Dynamic resume website powered by JSON data and rendered with JavaScript.",
       "tech": ["HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/yourusername"
+      "github": "https://github.com/yourusername/fullstack-resume"
     }
   ],
 
   "contact": {
     "email": "your@email.com",
     "phone": "-",
-    "github": "https://github.com/yourusername"
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourprofile"
   }
 }

@@ -2,12 +2,14 @@ fetch("resume.json")
   .then(res => res.json())
   .then(data => {
 
+    // ===== Basic Info =====
     document.getElementById("name").innerText = data.name;
     document.getElementById("title").innerText = data.title;
     document.getElementById("summary").innerText = data.summary;
 
-    // Skills
+    // ===== Skills =====
     const skillsDiv = document.getElementById("skills");
+
     for (let category in data.skills) {
       const div = document.createElement("div");
       div.className = "skill-card";
@@ -18,38 +20,45 @@ fetch("resume.json")
       skillsDiv.appendChild(div);
     }
 
-    // Experience
-    const expDiv = document.getElementById("experience");
-    data.experience.forEach(exp => {
-      const div = document.createElement("div");
-      div.innerHTML = `
-        <h3>${exp.role} - ${exp.company}</h3>
-        <p><em>${exp.period}</em></p>
-        <p>${exp.description}</p>
-      `;
-      expDiv.appendChild(div);
-    });
+    // ===== Experience =====
+    if (data.experience && data.experience.length > 0) {
+      const expDiv = document.getElementById("experience");
 
-    // Projects
-    const projectDiv = document.getElementById("projects");
-    data.projects.forEach(project => {
-      const div = document.createElement("div");
-      div.className = "project-card";
-      div.innerHTML = `
-        <h3>${project.name}</h3>
-        <p>${project.description}</p>
-        <p><strong>Tech:</strong> ${project.tech.join(", ")}</p>
-        <a href="${project.github}" target="_blank">View on GitHub</a>
-      `;
-      projectDiv.appendChild(div);
-    });
+      data.experience.forEach(exp => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+          <h3>${exp.role} - ${exp.company}</h3>
+          <p><em>${exp.period}</em></p>
+          <p>${exp.description}</p>
+        `;
+        expDiv.appendChild(div);
+      });
+    }
 
-    // Contact
+    // ===== Projects =====
+    if (data.projects && data.projects.length > 0) {
+      const projectDiv = document.getElementById("projects");
+
+      data.projects.forEach(project => {
+        const div = document.createElement("div");
+        div.className = "project-card";
+        div.innerHTML = `
+          <h3>${project.name}</h3>
+          <p>${project.description}</p>
+          ${project.tech ? `<p><strong>Tech:</strong> ${project.tech.join(", ")}</p>` : ""}
+          ${project.github ? `<a href="${project.github}" target="_blank">View on GitHub</a>` : ""}
+        `;
+        projectDiv.appendChild(div);
+      });
+    }
+
+    // ===== Contact =====
     const contactDiv = document.getElementById("contact");
     contactDiv.innerHTML = `
       <p>Email: ${data.contact.email}</p>
       <p>Phone: ${data.contact.phone}</p>
       <p>GitHub: <a href="${data.contact.github}" target="_blank">${data.contact.github}</a></p>
+      <p>LinkedIn: <a href="${data.contact.linkedin}" target="_blank">${data.contact.linkedin}</a></p>
     `;
-
-  });
+  })
+  .catch(err => console.error("Error loading resume:", err));
