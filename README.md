@@ -1,4 +1,4 @@
-# 👋 Hi, I'm [khanathip thuennao]
+# 👋 Hi, I'm [Khanathip Thuennao]
 
 💻 Full Stack Developer | Backend Developer | Frontend Developer  
 📍 Based in Thailand  
@@ -62,3 +62,4 @@ To grow as a Software Engineer and contribute to impactful products while contin
 
 - Email: nanokhanathip@gmail.com
 - Portfolio: https://yourportfolio.com
+
