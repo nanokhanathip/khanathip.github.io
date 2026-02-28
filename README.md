@@ -61,5 +61,6 @@ To grow as a Software Engineer and contribute to impactful products while contin
 ## 📫 Contact Me
 
 - Email: nanokhanathip@gmail.com
-- Portfolio: https://yourportfolio.com
+- Portfolio: [https://yourportfolio.com](https://nanokhanathip.github.io/khanathip.github.io/)
+
 
