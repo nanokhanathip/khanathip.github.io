@@ -2,9 +2,9 @@ fetch("resume.json")
   .then(res => res.json())
   .then(data => {
 
-    document.getElementById("name").innerText = data.profile.name;
-    document.getElementById("title").innerText = data.profile.title;
-    document.getElementById("summary").innerText = data.profile.summary;
+    document.getElementById("name").innerText = data.name;
+    document.getElementById("title").innerText = data.title;
+    document.getElementById("summary").innerText = data.summary;
 
     // Skills
     const skillsDiv = document.getElementById("skills");
@@ -51,4 +51,5 @@ fetch("resume.json")
       <p>Phone: ${data.contact.phone}</p>
       <p>GitHub: <a href="${data.contact.github}" target="_blank">${data.contact.github}</a></p>
     `;
+
   });
