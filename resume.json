@@ -1,12 +1,17 @@
 {
   "name": "Khanathip Thuennao",
   "title": "Fullstack Developer",
+  "nickname": "โน",
+  "age": 28,
+  "birthdate": "1997-03-31",
   "summary": "Passionate Fullstack Developer building scalable and modern web applications.",
 
+  
   "skills": {
     "frontend": ["HTML", "CSS", "JavaScript","Reacte"],
     "backend": ["Node.js", "ExpresJs" ,"PHP"],
     "tools": ["Git", "GitHub", "VS Code"],
+    "database": ["MySQL"],
     "framework": ["Express.js","Codenator","Bootstrap"]
   },
 
@@ -15,7 +20,7 @@
       "role": "Junior Fullstack Developer",
       "company": "Icon framework",
       "period": "2020 - 2026",
-      "description": "Developing fullstack web applications with PHP Codenator3 and responsive frontend interfaces SAPB1."
+      "description": "Developing fullstack web applications with PHP Codenator3 and responsive frontend interfaces."
     }
   ],
 

@@ -4,6 +4,9 @@ fetch("resume.json")
 
     // ===== Basic Info =====
     document.getElementById("name").innerText = data.name;
+     document.getElementById("nickname").innerText = data.nickname;
+     document.getElementById("age").innerText = data.age;
+    document.getElementById("birthdate").innerText = data.birthdate;
     document.getElementById("title").innerText = data.title;
     document.getElementById("summary").innerText = data.summary;
 
