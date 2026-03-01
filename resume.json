@@ -1,20 +1,21 @@
 {
-  "name": "Nanokhanathip",
-  "title": "Fullstack JavaScript Developer",
+  "name": "Khanathip Thuennao",
+  "title": "Fullstack Developer",
   "summary": "Passionate Fullstack Developer building scalable and modern web applications using JavaScript across the stack.",
 
   "skills": {
-    "frontend": ["HTML", "CSS", "JavaScript"],
-    "backend": ["Node.js", "Express"],
-    "tools": ["Git", "GitHub", "VS Code"]
+    "frontend": ["HTML", "CSS", "JavaScript","Reacte"],
+    "backend": ["Node.js", "ExpresJs" ,"PHP"],
+    "tools": ["Git", "GitHub", "VS Code"],
+    "framework": ["Express.js","Codenator","Bootstrap"]
   },
 
   "experience": [
     {
       "role": "Junior Fullstack Developer",
-      "company": "Freelance / Personal Projects",
-      "period": "2024 - Present",
-      "description": "Developing fullstack web applications with REST APIs and responsive frontend interfaces."
+      "company": "Iconframe framework",
+      "period": "2020 - 2026",
+      "description": "Developing fullstack web applications with PHP Codenator3 and responsive frontend interfaces SAPB1."
     }
   ],
 
@@ -23,14 +24,14 @@
       "name": "Fullstack Resume",
       "description": "Dynamic resume website powered by JSON data and rendered with JavaScript.",
       "tech": ["HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/yourusername/fullstack-resume"
+      "github": "https://nanokhanathip.github.io/khanathip.github.io/"
     }
   ],
 
   "contact": {
     "email": "your@email.com",
     "phone": "-",
-    "github": "https://github.com/yourusername",
+    "github": "https://github.com/nanokhanathip",
     "linkedin": "https://linkedin.com/in/yourprofile"
   }
 }
