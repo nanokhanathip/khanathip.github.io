@@ -14,7 +14,7 @@ fetch("resume.json")
     document.getElementById("name").innerText = data.name;
     document.getElementById("nickname").innerText = data.nickname;
     document.getElementById("age").innerText = data.age;
-  
+
     document.getElementById("birthdate").innerText = `${day}/${month}/${year}`;
     document.getElementById("title").innerText = data.title;
     document.getElementById("summary").innerText = data.summary;
@@ -72,5 +72,19 @@ fetch("resume.json")
       <p>GitHub: <a href="${data.contact.github}" target="_blank">${data.contact.github}</a></p>
       <p>LinkedIn: <a href="${data.contact.linkedin}" target="_blank">${data.contact.linkedin}</a></p>
     `;
+
+    // ===== Education =====
+    const eduDiv = document.getElementById("education");
+    data.education.forEach(edu => {
+      const div = document.createElement("div");
+      div.innerHTML = `
+    <h3>${edu.degree}</h3>
+    <p><em>${edu.period}</em> | GPA: ${edu.gpa}</p>
+    <p>${edu.institution}, ${edu.location}</p>
+  `;
+      eduDiv.appendChild(div);
+    });
+
+
   })
   .catch(err => console.error("Error loading resume:", err));

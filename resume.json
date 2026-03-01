@@ -6,6 +6,8 @@
   "birthdate": "1997-03-31",
   "summary": "Passionate Fullstack Developer building scalable and modern web applications.",
 
+    
+
   
   "skills": {
     "frontend": ["HTML", "CSS", "JavaScript","Reacte"],
@@ -38,5 +40,16 @@
     "phone": "0928012185",
     "github": "https://github.com/nanokhanathip",
     "linkedin": "https://linkedin.com/in/yourprofile"
+  },
+
+  "education": [
+  {
+    "degree": "Bachelor of Computer Science",
+    "institution": "Suan Sunandha Rajabhat University",
+    "location": "Bangkok, Thailand",
+    "period": "2015 - 2018",
+    "gpa": "3.28"
   }
+]
+
 }
