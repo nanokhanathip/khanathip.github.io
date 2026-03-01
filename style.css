@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f9fafb;
-  color: #1f2937;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
   line-height: 1.6;
 }
 
