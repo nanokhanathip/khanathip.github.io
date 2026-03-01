@@ -94,6 +94,10 @@ h2 {
   font-size: 14px;
 }
 
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
 /* ===== Experience ===== */
 #experience div {
   background: #111827;
