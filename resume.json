@@ -5,51 +5,68 @@
   "age": 28,
   "birthdate": "1997-03-31",
   "summary": "Passionate Fullstack Developer building scalable and modern web applications.",
-
-    
-
-  
   "skills": {
-    "frontend": ["HTML", "CSS", "JavaScript","Reacte"],
-    "backend": ["Node.js", "ExpresJs" ,"PHP"],
-    "tools": ["Git", "GitHub", "VS Code","Navicat","Chatgpt"],
-    "database": ["MySQL","postgresql"],
-    "framework": ["Express.js","Codenator","Bootstrap"]
+    "frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Reacte"
+    ],
+    "backend": [
+      "Node.js",
+      "ExpresJs",
+      "PHP"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Navicat",
+      "Chatgpt"
+    ],
+    "database": [
+      "MySQL",
+      "postgresql"
+    ],
+    "framework": [
+      "Express.js",
+      "Codenator",
+      "Bootstrap"
+    ]
   },
-
   "experience": [
     {
       "role": "Fullstack Developer",
       "company": "Icon framework",
       "period": "2020 - 2026",
-     "description": "Designed and developed a project construction management system using PHP CodeIgniter 3, including database design, system architecture, and performance optimization."
+      "description": "Designed and developed a project construction management system using PHP CodeIgniter 3, including database design, system architecture, and performance optimization."
     }
   ],
-
   "projects": [
     {
       "name": "Fullstack Resume",
       "description": "Dynamic resume website powered by JSON data and rendered with JavaScript.",
-      "tech": ["HTML", "CSS", "JavaScript"],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
       "github": "https://nanokhanathip.github.io/khanathip.github.io/"
     }
   ],
-
   "contact": {
     "email": "nanokhanathip@gmail.com",
     "phone": "0928012185",
     "github": "https://github.com/nanokhanathip",
     "linkedin": "https://www.linkedin.com/in/nano-khanathip-54a6613ab/"
   },
-
   "education": [
-  {
-    "degree": "Bachelor of Computer Science",
-    "institution": "Suan Sunandha Rajabhat University",
-    "location": "Bangkok, Thailand",
-    "period": "2015 - 2018",
-    "gpa": "3.28"
-  }
-]
-
+    {
+      "degree": "Bachelor of Computer Science",
+      "institution": "Suan Sunandha Rajabhat University",
+      "location": "Bangkok, Thailand",
+      "period": "2015 - 2018",
+      "gpa": "3.28"
+    }
+  ]
 }

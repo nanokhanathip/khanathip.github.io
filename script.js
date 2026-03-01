@@ -71,7 +71,7 @@ fetch("resume.json")
       data.education.forEach(edu => {
         const div = document.createElement("div");
         div.innerHTML = `
-      <h3>${edu.degree}</h3>
+      <p>${edu.degree}</p>
       <p><em>${edu.period}</em> | GPA: ${edu.gpa}</p>
       <p>${edu.institution}, ${edu.location}</p>
     `;
