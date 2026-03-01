@@ -64,6 +64,21 @@ fetch("resume.json")
       });
     }
 
+    // ===== Education =====
+    const eduDiv = document.getElementById("education");
+
+    if (data.education && Array.isArray(data.education)) {
+      data.education.forEach(edu => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+      <h3>${edu.degree}</h3>
+      <p><em>${edu.period}</em> | GPA: ${edu.gpa}</p>
+      <p>${edu.institution}, ${edu.location}</p>
+    `;
+        eduDiv.appendChild(div);
+      });
+    }
+
     // ===== Contact =====
     const contactDiv = document.getElementById("contact");
     contactDiv.innerHTML = `
@@ -72,19 +87,6 @@ fetch("resume.json")
       <p>GitHub: <a href="${data.contact.github}" target="_blank">${data.contact.github}</a></p>
       <p>LinkedIn: <a href="${data.contact.linkedin}" target="_blank">${data.contact.linkedin}</a></p>
     `;
-
-    // ===== Education =====
-    const eduDiv = document.getElementById("education");
-    data.education.forEach(edu => {
-      const div = document.createElement("div");
-      div.innerHTML = `
-    <h3>${edu.degree}</h3>
-    <p><em>${edu.period}</em> | GPA: ${edu.gpa}</p>
-    <p>${edu.institution}, ${edu.location}</p>
-  `;
-      eduDiv.appendChild(div);
-    });
-
 
   })
   .catch(err => console.error("Error loading resume:", err));
