@@ -2,11 +2,20 @@ fetch("resume.json")
   .then(res => res.json())
   .then(data => {
 
+    // birthdate to ddmmyyyy
+    const date = new Date(data.birthdate);
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = date.getFullYear();
+    //
+
+
     // ===== Basic Info =====
     document.getElementById("name").innerText = data.name;
-     document.getElementById("nickname").innerText = data.nickname;
-     document.getElementById("age").innerText = data.age;
-    document.getElementById("birthdate").innerText = data.birthdate;
+    document.getElementById("nickname").innerText = data.nickname;
+    document.getElementById("age").innerText = data.age;
+  
+    document.getElementById("birthdate").innerText = `${day}/${month}/${year}`;
     document.getElementById("title").innerText = data.title;
     document.getElementById("summary").innerText = data.summary;
 
