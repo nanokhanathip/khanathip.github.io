@@ -90,3 +90,4 @@ fetch("resume.json")
 
   })
   .catch(err => console.error("Error loading resume:", err));
+
