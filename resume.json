@@ -1,7 +1,7 @@
 {
   "name": "Khanathip Thuennao",
   "title": "Fullstack Developer",
-  "summary": "Passionate Fullstack Developer building scalable and modern web applications using JavaScript across the stack.",
+  "summary": "Passionate Fullstack Developer building scalable and modern web applications.",
 
   "skills": {
     "frontend": ["HTML", "CSS", "JavaScript","Reacte"],
@@ -13,7 +13,7 @@
   "experience": [
     {
       "role": "Junior Fullstack Developer",
-      "company": "Iconframe framework",
+      "company": "Icon framework",
       "period": "2020 - 2026",
       "description": "Developing fullstack web applications with PHP Codenator3 and responsive frontend interfaces SAPB1."
     }
@@ -29,8 +29,8 @@
   ],
 
   "contact": {
-    "email": "your@email.com",
-    "phone": "-",
+    "email": "nanokhanathip@gmail.com",
+    "phone": "0928012185",
     "github": "https://github.com/nanokhanathip",
     "linkedin": "https://linkedin.com/in/yourprofile"
   }
