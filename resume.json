@@ -38,25 +38,57 @@
     {
       "role": "Fullstack Developer",
       "company": "ICON Framework CO.,Ltd.",
-      "period": "2020 - 2026",
+      "period": "2020 - 2026 (5 year)",
       "description": "Designed and developed a project construction management system using PHP CodeIgniter 3, including database design, system architecture, and performance optimization."
     }
   ],
+
+
   "projects": [
     {
-      "name": "Fullstack Resume",
-      "description": "Dynamic resume website powered by JSON data and rendered with JavaScript.",
+      "name": "Construction Management System",
+      "role": "Fullstack Developer",
+      "description": "Developed an internal enterprise web application for managing construction projects, including project tracking, document management, progress monitoring, and automated reporting.",
+      "responsibilities": [
+        "Designed relational database schema using MySQL",
+        "Built backend modules using PHP CodeIgniter 3",
+        "Developed dynamic frontend interfaces with JavaScript",
+        "Optimized database queries to improve performance"
+      ],
+      "tech": [
+        "PHP",
+        "JavaScript",
+        "Html",
+        "CSS",
+        "CodeIgniter 3",
+        "MySQL",
+        "git",
+        ""
+      ],
+      "github": "-"
+    },
+    {
+      "name": "Dynamic Resume Website",
+      "role": "Frontend Developer",
+      "description": "Interactive resume website that dynamically renders content from a structured JSON file using JavaScript.",
+      "responsibilities": [
+        "Designed responsive UI layout",
+        "Implemented data-driven rendering using fetch API",
+        "Built search and filtering functionality",
+        "Optimized user interface with modern CSS styling"
+      ],
       "tech": [
         "HTML",
         "CSS",
         "JavaScript"
       ],
-      "github": "https://nanokhanathip.github.io/khanathip.github.io/"
+      "github": "https://nanokhanathip.github.io/khanathip.github.io"
     }
   ],
+  
   "contact": {
     "email": "nanokhanathip@gmail.com",
-    "phone": "0928012185"
+    "phone": "092-801-2185"
   },
   "education": [
     {

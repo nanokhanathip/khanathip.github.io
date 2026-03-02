@@ -48,20 +48,43 @@ fetch("resume.json")
     }
 
     // ===== Projects =====
-    if (data.projects && data.projects.length > 0) {
-      const projectDiv = document.getElementById("projects");
+    const projectDiv = document.getElementById("projects");
+
+    if (data.projects && Array.isArray(data.projects)) {
 
       data.projects.forEach(project => {
         const div = document.createElement("div");
         div.className = "project-card";
+
+        // สร้าง responsibilities list
+        let responsibilitiesHTML = "";
+        if (project.responsibilities && project.responsibilities.length > 0) {
+          responsibilitiesHTML = `
+        <ul class="project-responsibilities">
+          ${project.responsibilities.map(r => `<li>${r}</li>`).join("")}
+        </ul>
+      `;
+        }
+
+        // impact (ถ้ามี)
+        let impactHTML = "";
+        if (project.impact) {
+          impactHTML = `<p class="project-impact"><strong>Impact:</strong> ${project.impact}</p>`;
+        }
+
         div.innerHTML = `
-          <h3>${project.name}</h3>
-          <p>${project.description}</p>
-          ${project.tech ? `<p><strong>Tech:</strong> ${project.tech.join(", ")}</p>` : ""}
-          ${project.github ? `<a href="${project.github}" target="_blank">View on GitHub</a>` : ""}
-        `;
+      <h3>${project.name}</h3>
+      <p class="project-role">${project.role}</p>
+      <p>${project.description}</p>
+      ${responsibilitiesHTML}
+      ${impactHTML}
+      <p><strong>Tech:</strong> ${project.tech.join(", ")}</p>
+      <a href="${project.github}" target="_blank">View on GitHub</a>
+    `;
+
         projectDiv.appendChild(div);
       });
+
     }
 
     // ===== Education =====
