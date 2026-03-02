@@ -84,8 +84,7 @@ fetch("resume.json")
     contactDiv.innerHTML = `
       <p>Email: ${data.contact.email}</p>
       <p>Phone: ${data.contact.phone}</p>
-      <p>GitHub: <a href="${data.contact.github}" target="_blank">${data.contact.github}</a></p>
-      <p>LinkedIn: <a href="${data.contact.linkedin}" target="_blank">${data.contact.linkedin}</a></p>
+    
     `;
 
   })

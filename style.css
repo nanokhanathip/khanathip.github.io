@@ -63,7 +63,7 @@ h2 {
   font-weight: 600;
   margin-bottom: 25px;
   color: #f1f5f9;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #022154;
   padding-bottom: 8px;
 }
 
@@ -197,4 +197,34 @@ a:hover {
 
 .personal-info p {
   margin: 4px 0;
+}
+
+/* ===== Footer ===== */
+
+.main-footer {
+  border-top: 1px solid #1e293b;
+  margin-top: 80px;
+  padding: 30px 0;
+  background: #0b1220;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.footer-links a {
+  margin-left: 15px;
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
