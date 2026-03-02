@@ -42,8 +42,6 @@
       "description": "Designed and developed a project construction management system using PHP CodeIgniter 3, including database design, system architecture, and performance optimization."
     }
   ],
-
-
   "projects": [
     {
       "name": "Construction Management System",
@@ -85,7 +83,6 @@
       "github": "https://nanokhanathip.github.io/khanathip.github.io"
     }
   ],
-  
   "contact": {
     "email": "nanokhanathip@gmail.com",
     "phone": "092-801-2185"

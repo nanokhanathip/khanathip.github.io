@@ -72,15 +72,22 @@ fetch("resume.json")
           impactHTML = `<p class="project-impact"><strong>Impact:</strong> ${project.impact}</p>`;
         }
 
+        // สร้าง GitHub link ถ้ามีจริง
+        let githubHTML = "";
+
+        if (project.github && project.github !== "-") {
+          githubHTML = `<a href="${project.github}" target="_blank">View on GitHub</a>`;
+        }
+
         div.innerHTML = `
-      <h3>${project.name}</h3>
-      <p class="project-role">${project.role}</p>
-      <p>${project.description}</p>
-      ${responsibilitiesHTML}
-      ${impactHTML}
-      <p><strong>Tech:</strong> ${project.tech.join(", ")}</p>
-      <a href="${project.github}" target="_blank">View on GitHub</a>
-    `;
+  <h3>${project.name}</h3>
+  <p class="project-role">${project.role}</p>
+  <p>${project.description}</p>
+  ${responsibilitiesHTML}
+  ${impactHTML}
+  <p><strong>Tech:</strong> ${project.tech.join(", ")}</p>
+  ${githubHTML}
+`;;
 
         projectDiv.appendChild(div);
       });
